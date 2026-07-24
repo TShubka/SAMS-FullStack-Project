@@ -84,7 +84,12 @@ public class SecurityConfig {
                     .authenticationEntryPoint(authEntryPoint)      // 401
                     .accessDeniedHandler(accessDeniedHandler))     // 403
             .authorizeHttpRequests(auth -> auth
-                    .requestMatchers("/api/auth/**").permitAll()
+                    // Only registration and login are public. /api/auth/** as a
+                    // whole would also expose /api/auth/me, which needs a session -
+                    // an unauthenticated call would then reach the controller with a
+                    // null principal and fail as a 500 instead of a clean 401.
+                    .requestMatchers("/api/auth/register", "/api/auth/login").permitAll()
+                    .requestMatchers("/api/auth/me").authenticated()
                     .requestMatchers("/api/health").permitAll()
                     .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
 
