@@ -1,0 +1,33 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Node / React
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment and secrets - never commit credentials
+.env
+.env.*
+!.env.example
+application-local.yml
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
