@@ -26,10 +26,10 @@ public interface TeacherRepository extends JpaRepository<Teacher, Long> {
     @Query("""
            SELECT t FROM Teacher t
            WHERE (:departmentId IS NULL OR t.department.id = :departmentId)
-             AND (:search IS NULL OR
-                  LOWER(t.firstName)    LIKE LOWER(CONCAT('%', :search, '%')) OR
-                  LOWER(t.lastName)     LIKE LOWER(CONCAT('%', :search, '%')) OR
-                  LOWER(t.employeeCode) LIKE LOWER(CONCAT('%', :search, '%')))
+             AND (CAST(:search AS string) IS NULL OR
+                  LOWER(t.firstName)    LIKE LOWER(CONCAT('%', CAST(:search AS string), '%')) OR
+                  LOWER(t.lastName)     LIKE LOWER(CONCAT('%', CAST(:search AS string), '%')) OR
+                  LOWER(t.employeeCode) LIKE LOWER(CONCAT('%', CAST(:search AS string), '%')))
            """)
     Page<Teacher> findByFilters(@Param("departmentId") Long departmentId,
                                 @Param("search") String search,

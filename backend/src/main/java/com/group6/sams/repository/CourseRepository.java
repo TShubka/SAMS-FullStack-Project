@@ -30,9 +30,9 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
            WHERE (:departmentId IS NULL OR c.department.id = :departmentId)
              AND (:semester     IS NULL OR c.semester = :semester)
              AND (:teacherId    IS NULL OR c.teacher.id = :teacherId)
-             AND (:search       IS NULL OR
-                  LOWER(c.title) LIKE LOWER(CONCAT('%', :search, '%')) OR
-                  LOWER(c.code)  LIKE LOWER(CONCAT('%', :search, '%')))
+             AND (CAST(:search AS string) IS NULL OR
+                  LOWER(c.title) LIKE LOWER(CONCAT('%', CAST(:search AS string), '%')) OR
+                  LOWER(c.code)  LIKE LOWER(CONCAT('%', CAST(:search AS string), '%')))
            """)
     Page<Course> findByFilters(@Param("departmentId") Long departmentId,
                                @Param("semester") Integer semester,

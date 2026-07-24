@@ -21,4 +21,7 @@ public interface MarkRepository extends JpaRepository<Mark, Long> {
     List<Mark> findByAssessmentId(Long assessmentId);
 
     List<Mark> findByEnrollmentStudentId(Long studentId);
+
+    /** Backs the SET NULL behaviour when a teacher is deleted. */
+    List<Mark> findByEnteredById(Long teacherId);
 }

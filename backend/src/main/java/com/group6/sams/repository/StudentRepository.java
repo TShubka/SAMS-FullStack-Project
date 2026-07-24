@@ -32,10 +32,10 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
            SELECT s FROM Student s
            WHERE (:departmentId IS NULL OR s.department.id = :departmentId)
              AND (:admissionYear IS NULL OR s.admissionYear = :admissionYear)
-             AND (:search IS NULL OR
-                  LOWER(s.firstName)  LIKE LOWER(CONCAT('%', :search, '%')) OR
-                  LOWER(s.lastName)   LIKE LOWER(CONCAT('%', :search, '%')) OR
-                  LOWER(s.rollNumber) LIKE LOWER(CONCAT('%', :search, '%')))
+             AND (CAST(:search AS string) IS NULL OR
+                  LOWER(s.firstName)  LIKE LOWER(CONCAT('%', CAST(:search AS string), '%')) OR
+                  LOWER(s.lastName)   LIKE LOWER(CONCAT('%', CAST(:search AS string), '%')) OR
+                  LOWER(s.rollNumber) LIKE LOWER(CONCAT('%', CAST(:search AS string), '%')))
            """)
     Page<Student> findByFilters(@Param("departmentId") Long departmentId,
                                 @Param("admissionYear") Integer admissionYear,

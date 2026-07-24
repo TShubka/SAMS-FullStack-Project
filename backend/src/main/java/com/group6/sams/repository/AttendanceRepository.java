@@ -41,4 +41,7 @@ public interface AttendanceRepository extends JpaRepository<Attendance, Long> {
     Double calculatePercentageByEnrollment(@Param("enrollmentId") Long enrollmentId);
 
     long countByEnrollmentId(Long enrollmentId);
+
+    /** Backs the SET NULL behaviour when a teacher is deleted. */
+    List<Attendance> findByRecordedById(Long teacherId);
 }
