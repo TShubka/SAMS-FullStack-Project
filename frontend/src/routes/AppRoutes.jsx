@@ -18,6 +18,9 @@ import MyGradesPage from '../pages/student/MyGradesPage';
 import MyAttendancePage from '../pages/student/MyAttendancePage';
 import TranscriptPage from '../pages/student/TranscriptPage';
 
+import AttendancePage from '../pages/teacher/AttendancePage';
+import MarksPage from '../pages/teacher/MarksPage';
+
 import MainLayout from '../layouts/MainLayout';
 import ProtectedRoute from './ProtectedRoute';
 import RoleRoute from './RoleRoute';
@@ -54,6 +57,8 @@ export default function AppRoutes() {
             <Route path="/students" element={<StudentsPage />} />
             <Route path="/courses" element={<CoursesPage />} />
             <Route path="/reports" element={<ReportsPage />} />
+            <Route path="/attendance" element={<AttendancePage />} />
+            <Route path="/marks" element={<MarksPage />} />
           </Route>
 
           {/* Member 3 / 4 — student self-service */}
