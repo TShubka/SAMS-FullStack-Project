@@ -6,6 +6,7 @@ import DashboardPage from '../pages/shared/DashboardPage';
 import UnauthorizedPage from '../pages/shared/UnauthorizedPage';
 import NotFoundPage from '../pages/shared/NotFoundPage';
 import ProfilePage from '../pages/shared/ProfilePage';
+import ReportsPage from '../pages/shared/ReportsPage';
 
 import DepartmentsPage from '../pages/admin/DepartmentsPage';
 import StudentsPage from '../pages/admin/StudentsPage';
@@ -52,6 +53,7 @@ export default function AppRoutes() {
           <Route element={<RoleRoute allowed={[ADMIN, TEACHER]} />}>
             <Route path="/students" element={<StudentsPage />} />
             <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/reports" element={<ReportsPage />} />
           </Route>
 
           {/* Member 3 / 4 — student self-service */}

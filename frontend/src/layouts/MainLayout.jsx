@@ -33,6 +33,8 @@ export default function MainLayout() {
     // Teacher attendance/marks entry, admin reports and user management are built
     // in the next phases; their links are added here as those pages land, so the
     // nav never points at a route that would 404.
+    { to: '/reports', label: 'Reports', show: isAdmin || isTeacher },
+
     { to: '/my-attendance', label: 'My Attendance', show: isStudent },
     { to: '/my-grades', label: 'My Grades', show: isStudent },
     { to: '/transcript', label: 'My Transcript', show: isStudent },
