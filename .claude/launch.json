@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "backend",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "C:\\Users\\guule\\OneDrive\\Documents\\Student Attendent\\backend\\run-dev.cmd"],
+      "port": 8080,
+      "url": "http://localhost:8080/"
+    },
+    {
+      "name": "frontend",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "C:\\Users\\guule\\OneDrive\\Documents\\Student Attendent\\frontend\\run-dev.cmd"],
+      "port": 5173,
+      "url": "http://localhost:5173/"
+    }
+  ]
+}

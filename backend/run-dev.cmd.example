@@ -1,0 +1,9 @@
+@echo off
+REM Copy this file to run-dev.cmd and set your own database password.
+REM Dev launcher for the SAMS backend: sets the JDK 21 toolchain and the database
+REM password, then runs Spring Boot. Referenced by .claude/launch.json.
+setlocal
+set "JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot"
+if "%DB_PASSWORD%"=="" set "DB_PASSWORD=your_postgres_password_here"
+cd /d "%~dp0"
+call "%~dp0mvnw.cmd" -B spring-boot:run

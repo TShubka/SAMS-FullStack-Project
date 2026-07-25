@@ -24,6 +24,10 @@ dist-ssr/
 !.env.example
 application-local.yml
 
+# Backend dev launcher contains the local DB password - keep it out of git.
+# Commit run-dev.cmd.example instead; each developer copies it to run-dev.cmd.
+backend/run-dev.cmd
+
 # Logs
 *.log
 logs/
