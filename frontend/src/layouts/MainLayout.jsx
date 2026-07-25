@@ -30,16 +30,13 @@ export default function MainLayout() {
     { to: '/courses', label: 'Courses', show: isAdmin || isTeacher },
     { to: '/enrollments', label: 'Enrollments', show: isAdmin },
 
-    { to: '/attendance', label: 'Attendance', show: isAdmin || isTeacher },
+    // Teacher attendance/marks entry, admin reports and user management are built
+    // in the next phases; their links are added here as those pages land, so the
+    // nav never points at a route that would 404.
     { to: '/my-attendance', label: 'My Attendance', show: isStudent },
-
-    { to: '/marks', label: 'Marks', show: isAdmin || isTeacher },
     { to: '/my-grades', label: 'My Grades', show: isStudent },
-
     { to: '/transcript', label: 'My Transcript', show: isStudent },
-    { to: '/reports', label: 'Reports', show: isAdmin || isTeacher },
 
-    { to: '/users', label: 'Users', show: isAdmin },
     { to: '/profile', label: 'Profile', show: true },
   ].filter((link) => link.show);
 
