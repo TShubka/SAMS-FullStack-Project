@@ -259,3 +259,4 @@ and [tests/PHASE12_QA_SECURITY.md](tests/PHASE12_QA_SECURITY.md).
 - [docs/CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md) — individual member contributions
 - [docs/GENAI_ACKNOWLEDGEMENT.md](docs/GENAI_ACKNOWLEDGEMENT.md) — GenAI usage
 - [docs/API.md](docs/API.md) — full API reference
+"# SAMS-FullStack-Project" 
