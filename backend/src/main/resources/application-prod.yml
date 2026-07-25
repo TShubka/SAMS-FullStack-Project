@@ -7,4 +7,4 @@ spring:
 logging:
   level:
     root: info
-    com.group6.sams: info
+    com.group8.sams: info

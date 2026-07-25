@@ -1,6 +1,6 @@
 -- =====================================================================
 -- PHASE 2 DATABASE VERIFICATION
--- Group 6 - Student Academic Records & Attendance Management System
+-- Group 8 - Student Academic Records & Attendance Management System
 --
 -- Run AFTER starting the application once (Hibernate creates the schema
 -- under the dev profile via ddl-auto: update).

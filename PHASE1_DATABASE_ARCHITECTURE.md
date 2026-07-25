@@ -1,6 +1,6 @@
 # PHASE 1 — DATABASE & ARCHITECTURE
 
-**Group 6 — Student Academic Records & Attendance Management System**
+**Group 8 — Student Academic Records & Attendance Management System**
 Prerequisite: Phase 0 approved (11-entity model approved by the team).
 Status: **DESIGN ONLY — NO CODE WRITTEN.** Awaiting approval to enter Phase 2.
 

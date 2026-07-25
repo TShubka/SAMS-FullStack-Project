@@ -1,6 +1,6 @@
 # Viva Preparation & Demo Guide
 
-**Group 6 — Student Academic Records & Attendance Management System**
+**Group 8 — Student Academic Records & Attendance Management System**
 
 This is the defense guide: a demo script, and prepared answers to the questions in
 the specification. Every member should be fluent in their own area and comfortable

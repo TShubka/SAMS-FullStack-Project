@@ -1,5 +1,5 @@
 # PHASE 0 — PROJECT ANALYSIS
-**Group 6 — Student Academic Records & Attendance Management System**
+**Group 8 — Student Academic Records & Attendance Management System**
 Full-Stack Project (Spring Boot + ReactJS), 2025–2026
 Status: **ANALYSIS ONLY — NO CODE WRITTEN.** Awaiting approval to enter Phase 1.
 

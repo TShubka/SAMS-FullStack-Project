@@ -1,6 +1,6 @@
 # PHASE 11 — FULL INTEGRATION TEST RESULTS
 
-**Group 6 — Student Academic Records & Attendance Management System**
+**Group 8 — Student Academic Records & Attendance Management System**
 
 Run against the live backend (`http://localhost:8080`) with the seeded demo
 dataset. Reproduce with:

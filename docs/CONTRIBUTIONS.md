@@ -1,17 +1,21 @@
 # Individual Contributions
 
-**Group 6 — Student Academic Records & Attendance Management System**
+**Group 8 — Student Academic Records & Attendance Management System**
 
 The work was divided into four member areas, following the specification. Each
 member owns their backend, frontend, database tables and documentation for that
 area, and must be able to explain and defend their own code.
 
-> **Note to the team:** replace the placeholder names below with the actual group
-> members before submission.
+| Member | Name | Area |
+|---|---|---|
+| Member 1 | Shuaib Osman Daud | Authentication & Security |
+| Member 2 | Dahir Mohamed Shaie | Students, Departments & Courses |
+| Member 3 | Aisha Hassan Hersi | Attendance, Assessments & Marks |
+| Member 4 | Idiris Abdi Mohamed | Dashboards, Transcripts & Reports |
 
 ---
 
-## Member 1 — Authentication & Security
+## Member 1 — Shuaib Osman Daud — Authentication & Security
 
 **Backend:** `security/` package (JwtTokenProvider, JwtAuthenticationFilter,
 JwtAuthEntryPoint, JwtAccessDeniedHandler, CustomUserDetailsService, UserPrincipal,
@@ -33,7 +37,7 @@ public matcher to register/login only and separating the 401 entry point from th
 
 ---
 
-## Member 2 — Students, Departments & Courses
+## Member 2 — Dahir Mohamed Shaie — Students, Departments & Courses
 
 **Backend:** Department, Student, Teacher, Course, Enrollment entities, repositories,
 services and controllers; DTOs and the `AcademicMapper`; search, filtering and
@@ -54,7 +58,7 @@ while deleting a department or course with dependents is refused with a 409.
 
 ---
 
-## Member 3 — Attendance, Assessments & Marks
+## Member 3 — Aisha Hassan Hersi — Attendance, Assessments & Marks
 
 **Backend:** Attendance, Assessment, Mark entities, repositories, services and
 controllers; `AttendanceUtil` and `GradeUtil`; attendance percentage, weighted
@@ -76,7 +80,7 @@ cross-checked against independent SQL aggregates.
 
 ---
 
-## Member 4 — Dashboards, Transcripts & Reports
+## Member 4 — Idiris Abdi Mohamed — Dashboards, Transcripts & Reports
 
 **Backend:** TranscriptService, GradeService (GPA), ReportService (eight reports),
 DashboardService and their controllers; reporting projection queries; `DataSeeder`.

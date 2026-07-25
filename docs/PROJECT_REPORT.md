@@ -2,7 +2,7 @@
 
 ## Student Academic Records & Attendance Management System
 
-**Group 6** — Full-Stack Project (Spring Boot + ReactJS), 2025–2026
+**Group 8** — Full-Stack Project (Spring Boot + ReactJS), 2025–2026
 
 ---
 

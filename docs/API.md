@@ -1,6 +1,6 @@
 # API Reference
 
-**Group 6 — Student Academic Records & Attendance Management System**
+**Group 8 — Student Academic Records & Attendance Management System**
 
 Base URL: `http://localhost:8080/api`
 All endpoints except `POST /auth/register` and `POST /auth/login` require

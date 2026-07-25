@@ -1,6 +1,6 @@
 # GenAI Acknowledgement
 
-**Group 6 — Student Academic Records & Attendance Management System**
+**Group 8 — Student Academic Records & Attendance Management System**
 
 In line with the course's GenAI policy, we disclose that generative AI tools were
 used during this project, and we describe how.

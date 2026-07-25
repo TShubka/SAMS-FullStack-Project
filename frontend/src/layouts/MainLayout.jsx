@@ -57,7 +57,7 @@ export default function MainLayout() {
       <aside className={`sidebar ${menuOpen ? 'open' : ''}`}>
         <div className="brand">
           <strong>SAMS</strong>
-          <small>Group 6</small>
+          <small>Group 8</small>
         </div>
 
         <nav>

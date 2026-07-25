@@ -8,4 +8,4 @@ logging:
   level:
     org.hibernate.SQL: debug
     org.hibernate.orm.jdbc.bind: trace
-    com.group6.sams: debug
+    com.group8.sams: debug

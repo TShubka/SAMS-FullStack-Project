@@ -11,11 +11,11 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.group6</groupId>
+    <groupId>com.group8</groupId>
     <artifactId>sams</artifactId>
     <version>1.0.0</version>
     <name>sams</name>
-    <description>Student Academic Records and Attendance Management System - Group 6</description>
+    <description>Student Academic Records and Attendance Management System - Group 8</description>
 
     <properties>
         <java.version>21</java.version>

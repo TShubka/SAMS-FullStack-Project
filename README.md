@@ -1,6 +1,6 @@
 # Student Academic Records & Attendance Management System
 
-**Group 6** — Full-Stack Project (Spring Boot + ReactJS), 2025–2026
+**Group 8** — Full-Stack Project (Spring Boot + ReactJS), 2025–2026
 
 A web application for managing students, courses, attendance, marks, transcripts
 and department reports, with three roles — **Administrator, Teacher, Student** —

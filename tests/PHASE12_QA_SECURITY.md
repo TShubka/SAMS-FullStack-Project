@@ -1,6 +1,6 @@
 # PHASE 12 — QA & SECURITY RESULTS
 
-**Group 6 — Student Academic Records & Attendance Management System**
+**Group 8 — Student Academic Records & Attendance Management System**
 
 ## Security checks
 

@@ -1,6 +1,6 @@
 # Entity–Relationship Diagram & Schema
 
-**Group 6 — Student Academic Records & Attendance Management System**
+**Group 8 — Student Academic Records & Attendance Management System**
 
 ## ER Diagram
 
