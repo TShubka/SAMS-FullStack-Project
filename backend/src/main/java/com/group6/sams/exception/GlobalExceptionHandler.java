@@ -9,10 +9,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.validation.FieldError;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -90,6 +92,25 @@ public class GlobalExceptionHandler {
         String message = "Parameter '%s' has an invalid value: '%s'"
                 .formatted(ex.getName(), ex.getValue());
         return build(HttpStatus.BAD_REQUEST, message, request, null);
+    }
+
+    /** Wrong HTTP verb on a valid path, e.g. GET on a POST-only endpoint. */
+    @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
+    public ResponseEntity<ErrorResponse> handleMethodNotSupported(
+            HttpRequestMethodNotSupportedException ex, HttpServletRequest request) {
+        return build(HttpStatus.METHOD_NOT_ALLOWED,
+                     "HTTP method '%s' is not supported on this endpoint".formatted(ex.getMethod()),
+                     request, null);
+    }
+
+    /**
+     * An unmapped path. Spring would otherwise treat it as a missing static resource
+     * and let it fall through to the 500 catch-all; a 404 is the correct answer.
+     */
+    @ExceptionHandler(NoResourceFoundException.class)
+    public ResponseEntity<ErrorResponse> handleNoResource(NoResourceFoundException ex,
+                                                          HttpServletRequest request) {
+        return build(HttpStatus.NOT_FOUND, "No endpoint found for this path", request, null);
     }
 
     /**
