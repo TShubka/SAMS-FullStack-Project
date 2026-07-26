@@ -141,7 +141,40 @@ Results are recorded in `tests/PHASE11_INTEGRATION_RESULTS.md` and
 
 ---
 
-### 9. Conclusion
+### 9. Individual contributions
+
+The work was divided into four member-owned areas. Each member owns the backend,
+frontend, database tables and documentation for their area and can defend it.
+
+| Member | Area | Backend | Frontend | Tables |
+|---|---|---|---|---|
+| **Shuaib Osman Daud** | Authentication & Security | JWT, Spring Security, login/register, roles, global exception handling | Login, Register, AuthContext, route guards, Profile | users, roles, user_roles |
+| **Dahir Mohamed Shaie** | Students, Departments & Courses | 5 entities + CRUD services, search/filter/pagination, delete rules | Department/Student/Teacher/Course/Enrollment pages | departments, students, teachers, courses, enrollments |
+| **Aisha Hassan Hersi** | Attendance, Assessments & Marks | Attendance %, weighted grades, GPA logic, teacher-ownership rules | Attendance marking, marks entry, student attendance/grades views | attendance, assessments, marks |
+| **Idiris Abdi Mohamed** | Dashboards, Transcripts & Reports | Transcript, GPA, 8 reports, 3 dashboard endpoints | 3 role dashboards, transcript, reports console, charts | reporting queries |
+
+All members shared Git/GitHub, code reviews, integration, testing, debugging and
+documentation. A fuller breakdown is in `docs/CONTRIBUTIONS.md`.
+
+---
+
+### 10. GenAI acknowledgement
+
+In line with the course's GenAI policy, we disclose that generative AI tools were
+used during this project — for learning and understanding concepts (Spring Security,
+JWT, JPA relationships, React Context), scaffolding repetitive boilerplate, debugging
+specific errors, reviewing documentation and suggesting test boundary cases.
+
+Nothing was accepted blindly. Every generated piece of code was reviewed by the
+responsible member, compiled and run against the real application, and tested
+(23 unit tests, 52 integration checks, a security/QA sweep, with key figures
+cross-checked against direct SQL). The design decisions, architecture, business
+rules and final implementation are ours, and every member can explain and defend
+their own contribution. A fuller statement is in `docs/GENAI_ACKNOWLEDGEMENT.md`.
+
+---
+
+### 11. Conclusion
 
 The system meets the specification end-to-end: secure role-based authentication and
 authorization, full CRUD with search and pagination, attendance with percentages and
@@ -153,7 +186,7 @@ every member can defend their part of it.
 
 ---
 
-### 10. Future enhancements
+### 12. Future enhancements
 
 - Refresh tokens and token revocation.
 - CSV/PDF export of transcripts and reports.
