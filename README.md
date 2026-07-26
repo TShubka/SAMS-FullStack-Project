@@ -95,6 +95,10 @@ student may only read their own records).
 
 ---
 
+> **New to the project / a teammate cloning it?** Follow the step-by-step
+> [SETUP.md](SETUP.md) guide — it walks through installing the tools, creating the
+> database, and running both servers from scratch.
+
 ## Prerequisites
 
 - **JDK 21** (Eclipse Temurin recommended)
